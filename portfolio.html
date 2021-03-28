@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Портфолио</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/portfolio.min.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container container">
+                <a class="header-logo logo link" href="./index.html" lang="en">
+                    <span class="logo-accent" lang="en">Web</span>Studio
+                </a>
+                <nav class="navigation">
+                    <ul class="navigation-list list">
+                        <li class="navigation-point">
+                            <a class="navigation-link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="navigation-point">
+                            <a class="navigation-link link active" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="navigation-point">
+                            <a class="navigation-link link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts list">
+                    <li class="contacts-item">
+                        <a class="contacts-link link" href="mailto:https:info@devstudio.com">
+                            <svg class="contacts-logo" width="16" height="12">
+                                <use href="./images/sprite.svg#icon-email"></use>
+                            </svg>
+                            <span class="contacts-data">info@devstudio.com</span>
+                        </a>
+                    </li>
+                    <li class="contacts-item">
+                        <a class="contacts-link link" href="tel:+380961111111">
+                            <svg class="contacts-logo" width="10" height="16">
+                                <use href="./images/sprite.svg#icon-telephone"></use>
+                            </svg>
+                            <span class="contacts-data">+38 096 111 11 11</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="portfolio section">
+                <div class="portfolio-container container">
+                    <h1 class="portfolio-heading section-heading visually-hidden">Примеры наших работ</h1>
+                    <ul class="filter list">
+                        <li class="filter-element">
+                            <button class="filter-button button" type="button">Все</button>
+                        </li>
+                        <li class="filter-element">
+                            <button class="filter-button button" type="button">Веб-сайты</button>
+                        </li>
+                        <li class="filter-element">
+                            <button class="filter-button button" type="button">Приложения</button>
+                        </li>
+                        <li class="filter-element">
+                            <button class="filter-button button" type="button">Дизайн</button>
+                        </li>
+                        <li class="filter-element">
+                            <button class="filter-button button" type="button">Маркетинг</button>
+                        </li>
+                    </ul>
+                    <ul class="portfolio-list list">
+                        <li class="portfolio-example">
+                            <div class="portfolio-image-wrapper">
+                                <img class="portfolio-image" src="./images/site-tech.jpg" alt="Ноутбук с описанием команды проекта" width="370" height="294" title="Веб-сайт Технокряк">
+                                <div class="portfolio-description-wrapper">
+                                    <p class="portfolio-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-name-wrapper">
+                                <h2 class="portfolio-name">Технокряк</h2>
+                                <p class="portfolio-type">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-example">
+                            <div class="portfolio-image-wrapper">
+                                <img class="portfolio-image" src="./images/design-poster.jpg" alt="Два баскетболиста" width="370" height="294" title="Постер матча">
+                                <div class="portfolio-description-wrapper">
+                                    <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-name-wrapper">
+                                <h2 class="portfolio-name">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+                                <p class="portfolio-type">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-example">
+                            <div class="portfolio-image-wrapper">
+                                <img class="portfolio-image" src="./images/app-seafood.jpg" alt="Эмблема ресторана с рыбой на заднем фоне" width="370" height="294" title="Приложение для ресторана">
+                                <div class="portfolio-description-wrapper">
+                                    <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-name-wrapper">
+                                <h2 class="portfolio-name">Ресторан <span lang="en">Seafood</span></h2>
+                                <p class="portfolio-type">Приложение</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-example">
+                            <div class="portfolio-image-wrapper">
+                                <img class="portfolio-image" src="./images/marketing-prime.jpg" alt="Черные наушники" width="370" height="294" title="Маркетинг для аудио сервиса">
+                                <div class="portfolio-description-wrapper">
+                                    <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-name-wrapper">
+                                <h2 class="portfolio-name">Проект <span lang="en">Prime</span></h2>
+                                <p class="portfolio-type">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-example">
+                            <div class="portfolio-image-wrapper">
+                                <img class="portfolio-image" src="./images/app-boxes.jpg" alt="Две коробки, белая и коричневая" width="370" height="294" title="Приложение для почтового сервиса">
+                                <div class="portfolio-description-wrapper">
+                                    <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-name-wrapper">
+                                <h2 class="portfolio-name">Проект <span lang="en">Boxes</span></h2>
+                                <p class="portfolio-type">Приложение</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-example">
+                            <div class="portfolio-image-wrapper">
+                                <img class="portfolio-image" src="./images/site-inspiration.jpg" alt="Монитор с изображением страницы сайта и карты мира" width="370" height="294" title="Мотивационный веб-сайт">
+                                <div class="portfolio-description-wrapper">
+                                    <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-name-wrapper">
+                                <h2 class="portfolio-name" lang="en">Inspiration has no Borders</h2>
+                                <p class="portfolio-type">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-example">
+                            <div class="portfolio-image-wrapper">
+                                <img class="portfolio-image" src="./images/design-limited.jpg" alt="Развернутый журнал с фотографиями" width="370" height="294" title="Дизайн интернет-издания">
+                                <div class="portfolio-description-wrapper">
+                                    <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-name-wrapper">
+                                <h2 class="portfolio-name">Издание <span lang="en">Limited Edition</span></h2>
+                                <p class="portfolio-type">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-example">
+                            <div class="portfolio-image-wrapper">
+                                <img class="portfolio-image" src="./images/marketing-lab.jpg" alt="Белая бирка на нитке" width="370" height="294" title="Маркетинг исследовательского проекта">
+                                <div class="portfolio-description-wrapper">
+                                    <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-name-wrapper">
+                                <h2 class="portfolio-name">Проект <span lang="en">LAB</span></h2>
+                                <p class="portfolio-type">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-example">
+                            <div class="portfolio-image-wrapper">
+                                <img class="portfolio-image" src="./images/app-business.jpg" alt="Ноутбук с открытым веб-сайтом компании, две руки что-то печатают" width="370" height="294" title="Приложение по развитию бизнеса">
+                                <div class="portfolio-description-wrapper">
+                                    <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-name-wrapper">
+                                <h2 class="portfolio-name" lang="en">Growing Business</h2>
+                                <p class="portfolio-type">Приложение</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container container">
+                <div class="footer-addresses">
+                    <a class="footer-logo logo link" href="./index.html">
+                        <span class="logo-accent" lang="en">Web</span>Studio
+                    </a>
+                    <address class="addresses">
+                        <ul class="addresses-list list">
+                            <li class="addresses-point">
+                                <p>г. Киев, пр-т Леси Украинки, 26</p>
+                            </li>
+                            <li class="addresses-point">
+                                <a class="addresses-link link" href="mailto:https:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="addresses-point">
+                                <a class="addresses-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="company-social">
+                    <p class="company-social-calling">Присоединяйтесь</p>
+                    <ul class="company-social-list list">
+                        <li class="company-social-sites">
+                            <a href="#" class="company-social-links link">
+                                <svg class="company-social-icon">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="company-social-sites">
+                            <a href="#" class="company-social-links link">
+                                <svg class="company-social-icon">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="company-social-sites">
+                            <a href="#" class="company-social-links link">
+                                <svg class="company-social-icon">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="company-social-sites">
+                            <a href="#" class="company-social-links link">
+                                <svg class="company-social-icon">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscription">
+                    <p class="subscription-calling">Подпишитесь на рассылку</p>
+                    <form class="subscription-form" action="#" method="GET">
+                        <input class="subscription-email" lang="en" type="email" name="user-email" placeholder="E-mail">
+                        <button class="subscription-button button" type="submit">
+                            Подписаться
+                            <svg class="subscription-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#mailing-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/modal.js"></script>
+    </body>
+</html>
