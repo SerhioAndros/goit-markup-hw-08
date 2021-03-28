@@ -1,0 +1,38 @@
+// ======= CLIENTS start
+.clients-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.clients-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    border-color: var(--text-color-accent);
+  }
+}
+.clients-logo {
+  fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: var(--text-color-accent);
+  }
+}
+.clients-link {
+  &:hover,
+  &:focus {
+    color: var(--text-color-accent);
+  }
+}
+// ======= CLIENTS end
