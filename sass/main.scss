@@ -7,8 +7,7 @@
 @import './components/modal-button';
 
 @import './utils/variables';
-@import './utils/active';
-@import './utils/zero-bottom-padding';
+@import './utils/zero-top-padding';
 @import './utils/visually-hidden';
 
 @import './layout/header';
@@ -19,3 +18,5 @@
 @import './layout/clients';
 @import './layout/portfolio';
 @import './layout/footer';
+
+@import './utils/active';
