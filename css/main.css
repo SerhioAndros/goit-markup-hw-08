@@ -200,8 +200,11 @@ body {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 94%;
+  max-width: 450px;
+  height: 94%;
+  max-height: 610px;
+  overflow-y: scroll;
   padding: 40px;
   background-color: var(--bg-color-light);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -343,14 +346,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 7px;
-  font-size: 14px;
+  text-align: center;
+  font-size: 12px;
   line-height: 1.71;
   color: var(--text-color-secondary);
   margin-bottom: 30px;
@@ -375,6 +380,27 @@ body {
   text-decoration: underline;
   font-family: inherit;
   color: var(--text-color-accent);
+}
+
+@media screen and (max-width: 480px) {
+  .user-terms-descr {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .user-terms-descr {
+    font-size: 14px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .modal-button {
@@ -1107,13 +1133,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
 }
 
-.filter-element:not(:last-child) {
+.filter-element {
+  margin-bottom: 15px;
   margin-right: 8px;
 }
 
@@ -1143,17 +1172,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
 }
 
 .portfolio-example {
   position: relative;
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1229,6 +1259,51 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .filter-element {
+    margin-bottom: 0px;
+  }
+  .filter-element:not(:last-child) {
+    margin-right: 8px;
+  }
+  /* ==== сетка */
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .portfolio-example {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-example {
+    width: calc(100% / 3 - 30px);
+  }
 }
 
 .footer {
