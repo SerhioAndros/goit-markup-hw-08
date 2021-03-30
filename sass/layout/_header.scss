@@ -180,6 +180,7 @@
   visibility: hidden;
   pointer-events: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 .mobile-menu-close-btn {
   position: absolute;
@@ -199,7 +200,7 @@
     fill: var(--text-color-accent);
   }
 }
-.mobile-menu-list-item:not(:last-child) {
+.mobile-menu-list-item {
   margin-bottom: 32px;
 }
 .mobile-menu-list-item-link {
