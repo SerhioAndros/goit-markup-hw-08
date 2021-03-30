@@ -11,7 +11,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-container container">
+            <div class="container">
                 <a class="header-logo logo link" href="./index.html" lang="en">
                     <span class="logo-accent" lang="en">Web</span>Studio
                 </a>
@@ -46,10 +46,15 @@
                         </a>
                     </li>
                 </ul>
+                <button class="menu-button">
+                    <svg class="menu-open-button" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <main>
-            <!-- <section class="portfolio section">
+            <section class="portfolio section">
                 <div class="portfolio-container container">
                     <h1 class="portfolio-heading section-heading visually-hidden">Примеры наших работ</h1>
                     <ul class="filter list">
@@ -72,7 +77,12 @@
                     <ul class="portfolio-list list">
                         <li class="portfolio-example">
                             <div class="portfolio-image-wrapper">
-                                <img class="portfolio-image" src="./images/site-tech.jpg" alt="Ноутбук с описанием команды проекта" width="370" height="294" title="Веб-сайт Технокряк">
+                                <picture>
+                                    <source srcset="./images/desk/pf-1@1x.jpg 1x, ./images/desk/pf-1@2x.jpg 2x," media="(min-width: 1200px)">
+                                    <source srcset="./images/tab/pf-1@1x.jpg 1x, ./images/tab/pf-1@2x.jpg 2x," media="(min-width: 768px)">
+                                    <source srcset="./images/mobi/pf-1@1x.jpg 1x, ./images/mobi/pf-1@2x.jpg 2x," media="(min-width: 280px)">
+                                    <img class="portfolio-image" src="./images/mobi/pf-1@1x.jpg" alt="Ноутбук с описанием команды проекта" title="Веб-сайт Технокряк">
+                                </picture>
                                 <div class="portfolio-description-wrapper">
                                     <p class="portfolio-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -85,7 +95,12 @@
                         </li>
                         <li class="portfolio-example">
                             <div class="portfolio-image-wrapper">
-                                <img class="portfolio-image" src="./images/design-poster.jpg" alt="Два баскетболиста" width="370" height="294" title="Постер матча">
+                                <picture>
+                                    <source srcset="./images/desk/pf-2@1x.jpg 1x, ./images/desk/pf-2@2x.jpg 2x," media="(min-width: 1200px)">
+                                    <source srcset="./images/tab/pf-2@1x.jpg 1x, ./images/tab/pf-2@2x.jpg 2x," media="(min-width: 768px)">
+                                    <source srcset="./images/mobi/pf-2@1x.jpg 1x, ./images/mobi/pf-2@2x.jpg 2x," media="(min-width: 280px)">
+                                    <img class="portfolio-image" src="./images/mobi/pf-2@1x.jpg" alt="Два баскетболиста" title="Постер матча">
+                                </picture>
                                 <div class="portfolio-description-wrapper">
                                     <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
                                 </div>
@@ -97,7 +112,12 @@
                         </li>
                         <li class="portfolio-example">
                             <div class="portfolio-image-wrapper">
-                                <img class="portfolio-image" src="./images/app-seafood.jpg" alt="Эмблема ресторана с рыбой на заднем фоне" width="370" height="294" title="Приложение для ресторана">
+                                <picture>
+                                    <source srcset="./images/desk/pf-3@1x.jpg 1x, ./images/desk/pf-3@2x.jpg 2x," media="(min-width: 1200px)">
+                                    <source srcset="./images/tab/pf-3@1x.jpg 1x, ./images/tab/pf-3@2x.jpg 2x," media="(min-width: 768px)">
+                                    <source srcset="./images/mobi/pf-3@1x.jpg 1x, ./images/mobi/pf-3@2x.jpg 2x," media="(min-width: 280px)">
+                                    <img class="portfolio-image" src="./images/mobi/pf-3@1x.jpg" alt="Эмблема ресторана с рыбой на заднем фоне" title="Приложение для ресторана">
+                                </picture>
                                 <div class="portfolio-description-wrapper">
                                     <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
                                 </div>
@@ -109,7 +129,12 @@
                         </li>
                         <li class="portfolio-example">
                             <div class="portfolio-image-wrapper">
-                                <img class="portfolio-image" src="./images/marketing-prime.jpg" alt="Черные наушники" width="370" height="294" title="Маркетинг для аудио сервиса">
+                                <picture>
+                                    <source srcset="./images/desk/pf-4@1x.jpg 1x, ./images/desk/pf-4@2x.jpg 2x," media="(min-width: 1200px)">
+                                    <source srcset="./images/tab/pf-4@1x.jpg 1x, ./images/tab/pf-4@2x.jpg 2x," media="(min-width: 768px)">
+                                    <source srcset="./images/mobi/pf-4@1x.jpg 1x, ./images/mobi/pf-4@2x.jpg 2x," media="(min-width: 280px)">
+                                    <img class="portfolio-image" src="./images/mobi/pf-4@1x.jpg" alt="Черные наушники" title="Маркетинг для аудио сервиса">
+                                </picture>
                                 <div class="portfolio-description-wrapper">
                                     <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
                                 </div>
@@ -121,7 +146,12 @@
                         </li>
                         <li class="portfolio-example">
                             <div class="portfolio-image-wrapper">
-                                <img class="portfolio-image" src="./images/app-boxes.jpg" alt="Две коробки, белая и коричневая" width="370" height="294" title="Приложение для почтового сервиса">
+                                <picture>
+                                    <source srcset="./images/desk/pf-5@1x.jpg 1x, ./images/desk/pf-5@2x.jpg 2x," media="(min-width: 1200px)">
+                                    <source srcset="./images/tab/pf-5@1x.jpg 1x, ./images/tab/pf-5@2x.jpg 2x," media="(min-width: 768px)">
+                                    <source srcset="./images/mobi/pf-5@1x.jpg 1x, ./images/mobi/pf-5@2x.jpg 2x," media="(min-width: 280px)">
+                                    <img class="portfolio-image" src="./images/mobi/pf-5@1x.jpg" alt="Две коробки, белая и коричневая" title="Приложение для почтового сервиса">
+                                </picture>
                                 <div class="portfolio-description-wrapper">
                                     <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
                                 </div>
@@ -133,7 +163,12 @@
                         </li>
                         <li class="portfolio-example">
                             <div class="portfolio-image-wrapper">
-                                <img class="portfolio-image" src="./images/site-inspiration.jpg" alt="Монитор с изображением страницы сайта и карты мира" width="370" height="294" title="Мотивационный веб-сайт">
+                                <picture>
+                                    <source srcset="./images/desk/pf-6@1x.jpg 1x, ./images/desk/pf-6@2x.jpg 2x," media="(min-width: 1200px)">
+                                    <source srcset="./images/tab/pf-6@1x.jpg 1x, ./images/tab/pf-6@2x.jpg 2x," media="(min-width: 768px)">
+                                    <source srcset="./images/mobi/pf-6@1x.jpg 1x, ./images/mobi/pf-6@2x.jpg 2x," media="(min-width: 280px)">
+                                    <img class="portfolio-image" src="./images/mobi/pf-6@1x.jpg" alt="Монитор с изображением страницы сайта и карты мира" title="Мотивационный веб-сайт">
+                                </picture>
                                 <div class="portfolio-description-wrapper">
                                     <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
                                 </div>
@@ -145,7 +180,12 @@
                         </li>
                         <li class="portfolio-example">
                             <div class="portfolio-image-wrapper">
-                                <img class="portfolio-image" src="./images/design-limited.jpg" alt="Развернутый журнал с фотографиями" width="370" height="294" title="Дизайн интернет-издания">
+                                <picture>
+                                    <source srcset="./images/desk/pf-7@1x.jpg 1x, ./images/desk/pf-7@2x.jpg 2x," media="(min-width: 1200px)">
+                                    <source srcset="./images/tab/pf-7@1x.jpg 1x, ./images/tab/pf-7@2x.jpg 2x," media="(min-width: 768px)">
+                                    <source srcset="./images/mobi/pf-7@1x.jpg 1x, ./images/mobi/pf-7@2x.jpg 2x," media="(min-width: 280px)">
+                                    <img class="portfolio-image" src="./images/mobi/pf-7@1x.jpg" alt="Развернутый журнал с фотографиями" title="Дизайн интернет-издания">
+                                </picture>
                                 <div class="portfolio-description-wrapper">
                                     <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
                                 </div>
@@ -157,7 +197,12 @@
                         </li>
                         <li class="portfolio-example">
                             <div class="portfolio-image-wrapper">
-                                <img class="portfolio-image" src="./images/marketing-lab.jpg" alt="Белая бирка на нитке" width="370" height="294" title="Маркетинг исследовательского проекта">
+                                <picture>
+                                    <source srcset="./images/desk/pf-8@1x.jpg 1x, ./images/desk/pf-8@2x.jpg 2x," media="(min-width: 1200px)">
+                                    <source srcset="./images/tab/pf-8@1x.jpg 1x, ./images/tab/pf-8@2x.jpg 2x," media="(min-width: 768px)">
+                                    <source srcset="./images/mobi/pf-8@1x.jpg 1x, ./images/mobi/pf-8@2x.jpg 2x," media="(min-width: 280px)">
+                                    <img class="portfolio-image" src="./images/mobi/pf-8@1x.jpg" alt="Белая бирка на нитке" title="Маркетинг исследовательского проекта">
+                                </picture>
                                 <div class="portfolio-description-wrapper">
                                     <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
                                 </div>
@@ -169,7 +214,12 @@
                         </li>
                         <li class="portfolio-example">
                             <div class="portfolio-image-wrapper">
-                                <img class="portfolio-image" src="./images/app-business.jpg" alt="Ноутбук с открытым веб-сайтом компании, две руки что-то печатают" width="370" height="294" title="Приложение по развитию бизнеса">
+                                <picture>
+                                    <source srcset="./images/desk/pf-9@1x.jpg 1x, ./images/desk/pf-9@2x.jpg 2x," media="(min-width: 1200px)">
+                                    <source srcset="./images/tab/pf-9@1x.jpg 1x, ./images/tab/pf-9@2x.jpg 2x," media="(min-width: 768px)">
+                                    <source srcset="./images/mobi/pf-9@1x.jpg 1x, ./images/mobi/pf-9@2x.jpg 2x," media="(min-width: 280px)">
+                                    <img class="portfolio-image" src="./images/mobi/pf-9@1x.jpg" alt="Ноутбук с открытым веб-сайтом компании, две руки что-то печатают" title="Приложение по развитию бизнеса">
+                                </picture>
                                 <div class="portfolio-description-wrapper">
                                     <p class="portfolio-description">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма.</p>
                                 </div>
@@ -181,9 +231,9 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
         </main>
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="footer-container container">
                 <div class="footer-addresses" id="contacts-list">
                     <a class="footer-logo logo link" href="./index.html">
@@ -240,7 +290,7 @@
                     <p class="subscription-calling">Подпишитесь на рассылку</p>
                     <form class="subscription-form" action="#" method="GET">
                         <input class="subscription-email" lang="en" type="email" name="user-email" placeholder="E-mail">
-                        <button class="subscription-button button" type="submit">
+                        <button class="modal-button button" type="submit">
                             Подписаться
                             <svg class="subscription-icon" width="24" height="24">
                                 <use href="./images/sprite.svg#mailing-send"></use>
@@ -249,7 +299,7 @@
                     </form>
                 </div>
             </div>
-        </footer> -->
+        </footer>
         <!-- <script src="./js/modal.js"></script> -->
     </body>
 </html>

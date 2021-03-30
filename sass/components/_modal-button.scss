@@ -26,10 +26,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px auto;
   }
   .backdrop & {
     outline: none;
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-button {
+    .footer & {
+      margin: 0px;
+    }
   }
 }
