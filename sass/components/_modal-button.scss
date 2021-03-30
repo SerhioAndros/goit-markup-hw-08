@@ -27,4 +27,9 @@
     justify-content: center;
     align-items: center;
   }
+  .backdrop & {
+    outline: none;
+    display: block;
+    margin: 0 auto;
+  }
 }
